@@ -240,7 +240,7 @@ public class TSBHashtableDA<K,V> implements Map<K,V>, Cloneable, Serializable
     @Override
     public V remove(Object key) 
     {
-        // HACER...
+        // HACER....
         if(key == null) throw new NullPointerException("remove(): parámetro null");
 
         return null;
