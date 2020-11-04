@@ -19,7 +19,8 @@ public class IPostulaciones {
         }
     }
 
-    public void importar() {
+    public void importar()
+    {
         File f = new File("descripcion_postulaciones.dsv");
         Scanner sc = null;
 
@@ -30,26 +31,25 @@ public class IPostulaciones {
         }
         assert sc != null;
         sc.nextLine();
-        while (sc.hasNextLine())
-        {
+        while (sc.hasNextLine()) {
             String[] fila = sc.nextLine().split("|");
             String codigoCategoria = (fila[0]);
-            if (codigoCategoria.equals("000100000000000"))
-            {
+            if (codigoCategoria.equals("000100000000000")) {
                 String codigoAgrupacion = (fila[2]);
                 String nombreAgrupacion = (fila[3]);
                 String codigoLista = (fila[4]);
                 String nombreLista = (fila[5]);
 
-                Postulantes p = new Postulantes(codigoAgrupacion,nombreAgrupacion,codigoLista,nombreLista);
+                Postulantes p = new Postulantes(codigoAgrupacion, nombreAgrupacion, codigoLista, nombreLista);
                 postulaciones.add(p);
             }
         }
+    }
 
         public static ArrayList<Postulantes> getPostulaciones()
         {
-            return postulaciones;    //no se porque no funciona esto, lo copie tal cual. me dice q la clase importar tiene que ser tipo arraylist, pero no se q onda
+            return postulaciones;
         }
     }
 
-}
+
