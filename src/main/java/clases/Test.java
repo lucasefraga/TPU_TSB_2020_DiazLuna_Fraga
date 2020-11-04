@@ -7,7 +7,7 @@ import java.util.Set;
 /**
  * Una clase con un main() simple para probar la clase TSBHashtableDA.
  * @author Ing. Valerio Frittelli.
- * @version Octubre de 2017.
+ * @version Octubre de 2017. Prueba 2
  */
 public class Test 
 {
