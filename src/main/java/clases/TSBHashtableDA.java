@@ -12,9 +12,7 @@ import java.util.*;
  * @version Octubre de 2019.
  * @param <K> el tipo de los objetos que serán usados como clave en la tabla.
  * @param <V> el tipo de los objetos que serán los valores de la tabla.
- *
- *           prueba de cambios n2
- */
+ * */
 public class TSBHashtableDA<K,V> implements Map<K,V>, Cloneable, Serializable
 {
     //************************ Constantes (privadas o públicas).
