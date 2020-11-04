@@ -14,12 +14,12 @@ public class IPostulaciones {
     {
         if (postulaciones.size() == 0)
         {
-            this.importar();
+            this.importarP();
             System.out.println("Las postulaciones se han importado");
         }
     }
 
-    public void importar()
+    public void importarP()
     {
         File f = new File("descripcion_postulaciones.dsv");
         Scanner sc = null;
@@ -46,10 +46,10 @@ public class IPostulaciones {
         }
     }
 
-        public static ArrayList<Postulantes> getPostulaciones()
-        {
-            return postulaciones;
-        }
+    public static ArrayList<Postulantes> getPostulaciones()
+    {
+        return postulaciones;
     }
+}
 
 

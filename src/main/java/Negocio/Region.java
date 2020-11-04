@@ -36,15 +36,42 @@ public class Region {
         subRegion.put(k,r);
     }
 
-    public Region obtenerSubRegion(String k)
+    public Region getSubRegion(String k)
     {
         return subRegion.get(k);
+    }
+
+    public boolean existSubRegion(String k)
+    {
+        return subRegion.containsKey(k);
     }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
 
+    public void sumarVotos(Integer codigoAgrupacion, int votos)
+    {
+        total.get(codigoAgrupacion).add(votos);
+    }
 
+    public Integer getVotos(int x)
+    {
+        return total.get(x).getAcumulador();
+    }
+
+    public TSBHashtableDA<Integer, Acumulador> getTotal()
+    {
+        return total;
+    }
+
+    @Override
+    public String toString()
+    {
+        return nombre;
+    }
 }
