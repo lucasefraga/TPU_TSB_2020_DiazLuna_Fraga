@@ -1,14 +1,12 @@
 package Negocio;
 
 import Importadores.*;
-import clases.TSBHashtableDA;
-import com.sun.org.apache.xml.internal.dtm.ref.sax2dtm.SAX2RTFDTM;
 
 import java.util.ArrayList;
 
 public class Region {
-    private TSBHashtableDA<Integer, Acumulador> total;
-    private TSBHashtableDA<String, Region> subRegion;
+    public TSBHashtableDA<Integer, Acumulador> total;
+    public TSBHashtableDA<String, Region> subRegion;
     private String nombre;
 
     public Region(String nombre)

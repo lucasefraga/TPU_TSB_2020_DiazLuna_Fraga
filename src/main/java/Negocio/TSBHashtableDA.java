@@ -1,4 +1,4 @@
-package clases;
+package Negocio;
 
 import java.io.Serializable;
 import java.util.*;
